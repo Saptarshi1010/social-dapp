@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ChatAppContect } from '../Context/ChatAppContext'
+import { Filter, Friend } from '../Components/index';
 
-const index = () => {
-  return <div>index</div>;
+const ChatApp = () => {
+  const { } = useContext(ChatAppContect);
+  return (
+    <>
+      <Filter />
+      <Friend />
+    </>
+    // <div>Hey</div>;
+  )
 };
 
-export default index;
+export default ChatApp;

@@ -1,0 +1,77 @@
+.Filter_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Filter_box_left_search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    padding-inline: 2rem;
+    background-color: rgb(0, 0, 0.25);
+    color: #f18303;
+}
+
+.Filter_box_left_search_input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: #f18303;
+    width: 20rem;
+}
+
+.Filter_box_right {
+    display: flex;
+    gap: 1rem;
+}
+
+.Filter_box_right button {
+    display: flex;
+    gap: .5rem;
+    background-color: rgb(0, 0, 0.25);
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #f18303;
+    width: 20rem;
+}
+
+.Filter_model {
+
+    position: fixed;
+    inset: 0 0 0 0;
+    display: flex;
+
+    background-color: rgb(0, 0, 0.25);
+    z-index: 2222222;
+}
+
+@media only screen and (max-width: 35em) {
+    .Filter {
+        width: 90%;
+    }
+
+    .Filter_box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .Filter_box_left_search_input {
+        font-size: .5rem;
+    }
+
+    .Filter_box_right button {
+        font-size: .5rem;
+    }
+
+    .Filter_model {
+
+        position: absolute;
+        inset: 0 0 -70% 0;
+    }
+}

@@ -1,0 +1,18 @@
+.Error {
+    position: fixed;
+    inset: 30% 30% 45% 30%;
+    z-index: 11111111;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.651);
+    text-align: center;
+    border-radius: 1 rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgb(248, 190, 83), -5px -5px, 10px, rgb(185, 152, 89);
+
+}
+
+@media only screen and (max-width:35em) {
+    .Error {
+        inset: 10%, 10%, 55%, 10%;
+    }
+}
